@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="header">
+        <div class="header-box">
+            <h1>Battleship</h1>
+            <p class="creator">Made by Loke Biteus</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="boards">
+            <div class="board-section">
+                <h2 class="gameboard1-h2">Your Fleet</h2>
+                <div class="gameboard1"></div>
+            </div>
+            <div class="board-section">
+                <h2 class="setup-h2">Setup</h2>
+                <div class="setup">
+                    <div class="carrier" data-ship="carrier"> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
+                    <div class="battleship" data-ship="battleship"> <div></div> <div></div> <div></div> <div></div> </div>
+                    <div class="cruiser" data-ship="cruiser"> <div></div> <div></div> <div></div> </div>
+                    <div class="submarine" data-ship="submarine"> <div></div> <div></div> <div></div> </div>
+                    <div class="destroyer" data-ship="destroyer"> <div></div> <div></div> </div>
+
+                    <button class="direction">Horizontal</button>
+                    <button class="random-ships">Random</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+            <div class="board-section">
+                <h2 class="gameboard2-h2">Enemy Fleet</h2>
+                <div class="gameboard2"></div>
+            </div>
+        </div>
+
+        <div class="status">
+            <h2 class="status-title"></h2>
+            <p class="status-message"></p>
+        </div>
+
+        <button class="start-battle">Start Battle</button>
+
+        <div class="Extra-space-so-it-looks-nice.Trust"></div>
+    </div>
+    <div class="menu-overlay">
+        <div class="menu">
+            <h2 class="menu-title">Gamemode</h2>
+            <div class="menu-buttons">
+                <button class="vs-computer"><img class="user-icon"> <span>VS</span> <img class="bot-icon"></button>
+                <button class="vs-player"><img class="user-icon"> <span>VS</span> <img class="user-icon"></button>
+            </div>
+        </div>
+    </div>
+    <div class="name-overlay">
+        <div class="name-menu">
+            <h2 class="name-title">Choose Names</h2>
+
+            <form class="name-form">
+                <div class="name-inputs">
+                    <input 
+                        class="name1"
+                        type="text"
+                        placeholder="Player 1"
+                        maxlength="15"
+                        required
+                    >
+                    <input 
+                        class="name2"
+                        type="text"
+                        placeholder="Player 2"
+                        maxlength="15"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="submit-button">Continue</button>
+            </form>
+        </div>
+    </div>
+    <div class="pass-overlay">
+        <h2 class="pass-title">Pass The Computer</h2>
+        <button class="passed">Passed</button>
+    </div>
+</body>
+</html>
